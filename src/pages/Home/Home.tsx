@@ -1,4 +1,3 @@
-
 interface PortfolioItem {
   imageUrl: string;
   description: string;
@@ -46,8 +45,8 @@ const Home = () => {
         <div className="section">
           <h3>Contact Information</h3>
           <div className="contact-info">
-            <p>Email: josephine.closan@yahoo.com</p>
-            <p>Phone: +358 403781794</p>
+            <p>Email: {import.meta.env.REACT_APP_EMAIL}</p>
+            <p>Phone: {import.meta.env.REACT_APP_PHONE}</p>
           </div>
         </div>
 

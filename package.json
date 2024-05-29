@@ -8,11 +8,14 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "format": "prettier --write ./src"
+    "format": "prettier --write ./src",
+    "start": "env-cmd react-scripts start"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^15.0.7",
+    "dotenv": "^16.4.5",
+    "env-cmd": "^10.1.0",
     "eslint-plugin-react": "^7.34.2",
     "jsdom": "^24.1.0",
     "prettier": "^3.2.5",
@@ -22,6 +25,7 @@
     "vitest": "^1.6.0"
   },
   "devDependencies": {
+    "@types/node": "^20.12.12",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
