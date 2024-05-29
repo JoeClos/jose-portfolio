@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
-
 import Navbar from '../../pages/Navbar/Navbar';
 import Footer from '../../pages/Footer/Footer';
+import './pagelayout.css';
 
 interface PageLayoutProps {
   children: ReactNode;
