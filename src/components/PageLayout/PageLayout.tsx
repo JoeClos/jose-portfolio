@@ -10,8 +10,10 @@ interface PageLayoutProps {
 const Pagelayout = ({ children }: PageLayoutProps) => {
   return (
     <div className="layout">
-      <header>
-        <Navbar />
+      <header className="header">
+        {/* <DarkModeProvider> */}
+          <Navbar />
+        {/* </DarkModeProvider> */}
       </header>
       <main>{children}</main>
       <footer>

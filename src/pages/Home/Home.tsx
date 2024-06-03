@@ -5,37 +5,32 @@ interface PortfolioItem {
   description: string;
 }
 
-const portfolio: PortfolioItem[] = [
-  {
-    imageUrl: 'Josephine-C.png',
-    description:
-      'I am an enthusiastic full-stack developer with a focus on front-end development, technology, and innovation. Being a strong advocate for lifelong learning, I embrace continuous education and personal development',
-  },
-  { imageUrl: 'Joe.jpg', description: 'Description of Portfolio Item 2' },
-];
+const portfolio: PortfolioItem = {
+  imageUrl: 'Joe-black.png',
+  description:
+    'I am an enthusiastic full-stack developer with a focus on front-end development, technology, and innovation. Being a strong advocate for lifelong learning, I embrace continuous education and personal development',
+};
 
 const Home = () => {
+
   return (
     <>
       <div className="container">
-          <h1>Hi, I&apos;m Josephine</h1>
-          <h2>Fullstack Developer with a Frontend Focus</h2>
+        <h1>Hi, I&apos;m Josephine</h1>
+        <h2>Fullstack Developer with a Frontend Focus</h2>
 
         <div className="section">
           <div className="portfolio">
-            {portfolio.map((item, index) => (
-              <div className="portfolio-item" key={index}>
-                <img
-                  className="profile-photo"
-                  src={item.imageUrl}
-                  alt={`Portfolio Item ${index + 1}`}
-                />
-                <p>{item.description}</p>
-              </div>
-            ))}
+            <div className="portfolio-item">
+              <img
+                className="profile-photo"
+                src={portfolio.imageUrl}
+                alt="Portfolio Item"
+              />
+              <p>{portfolio.description}</p>
+            </div>
           </div>
         </div>
-
 
         <div className="section">
           <h3>Interests</h3>
@@ -44,7 +39,6 @@ const Home = () => {
             would like your visitors to know about you.
           </p>
         </div>
-
 
         <div className="section">
           <h3>Contact Information</h3>
